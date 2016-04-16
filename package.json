@@ -1,0 +1,21 @@
+{
+  "name": "allex_clusterrepresentativeuserservice",
+  "version": "0.1.0",
+  "description": "ClusterRepresentativeUserService",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.hers.rs:allex_services/clusterrepresentativeuser.git"
+  },
+  "keywords": [
+    "ecosystem:allex",
+    "Service",
+    "ClusterRepresentativeUser"
+  ],
+  "author": "HERS Belgrade",
+  "license": "ISC"
+}
+
