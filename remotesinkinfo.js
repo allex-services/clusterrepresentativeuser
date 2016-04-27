@@ -1,7 +1,7 @@
-module.exports = [{
+module.exports = [/*{
   name: 'Cluster',
   role: 'user'
-}/*,{
+},{
   name: 'Clients',
   role: 'user'
 },{

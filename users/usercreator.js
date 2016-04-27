@@ -12,6 +12,7 @@ function createUser(execlib, ParentUser) {
     remotesinkinfo = require('../remotesinkinfo'),
     visiblefields = [],
     lib = execlib.lib,
+    q = lib.q,
     qlib = lib.qlib;
 
   localsinkinfo.forEach(function(localsink){
@@ -49,7 +50,8 @@ function createUser(execlib, ParentUser) {
     ipaddress = accessinfo.ipaddress;
     port = accessinfo.port;
     usertoken = accessinfo.tokens.user;
-    qlib.promise2defer(this.__service.connectToSelfCluster(ipaddress, port, usertoken), defer);
+    this.__service.state.set('access_info', accessinfo);
+    return q(true);
   };
 
   return User;

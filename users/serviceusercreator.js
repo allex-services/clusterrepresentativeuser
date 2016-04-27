@@ -17,7 +17,7 @@ function createServiceUser(execlib, ParentUser) {
   remotesinkinfo.forEach(function(remotesink){
     visiblefields.push('have'+execlib.execSuite.userServiceSuite.nameOfRemoteSinkDescriptor(remotesink));
   });
-  ParentUser.inherit(ServiceUser, require('../methoddescriptors/user'), visiblefields.concat([/*visible state fields here*/]));
+  ParentUser.inherit(ServiceUser, require('../methoddescriptors/user'), visiblefields.concat(['access_info'/*visible state fields here*/]));
   ServiceUser.prototype.__cleanUp = function () {
     ParentUser.prototype.__cleanUp.call(this);
   };
