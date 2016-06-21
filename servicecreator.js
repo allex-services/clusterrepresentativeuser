@@ -1,10 +1,5 @@
-function createClusterRepresentativeUserService(execlib, ParentServicePack) {
+function createClusterRepresentativeUserService(execlib, ParentService) {
   'use strict';
-  var ParentService = ParentServicePack.Service,
-    execSuite = execlib.execSuite,
-    lib = execlib.lib,
-    q = lib.q,
-    taskRegistry = execSuite.taskRegistry;
 
   function factoryCreator(parentFactory) {
     return {
