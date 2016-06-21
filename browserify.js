@@ -1,1 +1,1 @@
-ALLEX.execSuite.registry.add('allex_clusterrepresentativeuserservice',require('./clientside')(ALLEX));
+ALLEX.execSuite.registry.getClientSide('allex_clusterrepresentativeuserservice',require('./sinkmapcreator')(ALLEX));
